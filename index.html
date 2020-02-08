@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+<body>
+  <div class="header">
+    <h3 class="header-open">uma seleção de produtos</h3>
+    <h1 class="header-title">especial para você</h1>
+    <h2 class="header-line">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h2>
+    <div id="header-btn-line">
+      <div class="btn-line"><button type="submit" class="textBtn">Conheça a Linx</button></div>
+      <div class="btn-line"><button type="submit" class="textBtn">Ajude o algorítimo</button></div>
+      <div class="btn-line"><button type="submit" class="textBtn">Seus produtos</button></div>
+      <div class="btn-line"><button type="submit" class="textBtn">Compartilhe</button></div>
+    </div>
+  </div>
+
+  <div id="app"></div>
+
+  <div class="load-more clearfix">
+    <button class="load-more-btn" onclick="loadMore()">Ainda mais produtos aqui!</button>
+  </div>
+
+  <div class="form">
+  <h3 class="form-title">Compartilhe a novidade</h3>
+  <p class="form-text">Quer que seus amigos também ganhem a lista personalizada? Preencha agora</p>
+  <form class="form-field" action="" method="">
+    <div class="form-center">
+      <span class="form-span">
+        <label class="form-label" for="firstname">first name</label><br>
+        <input id="fieldName" onfocus="clearBorderName()" onfocusout="validateName()" type="text" autocomplete="nope" class="form-control" aria-describedby="namelHelp" placeholder="Nome"><br />
+        <!-- <small id="namePrompt" class="form-text"></small> -->
+      </span><br><br>
+      <span class="form-span">
+        <label class="form-label" for="email">email</label><br>
+        <input id="fieldEmail" onfocus="clearBorderMail()" onfocusout="validateEmail()" type="email" autocomplete="nope" class="form-control" aria-describedby="emailHelp" placeholder="E-mail"><br>
+        <!-- <small id="email_Prompt" class="form-text"></small> -->
+      </span>
+    </div>
+  </form>
+  </div>
+
+  <div class="submit-section clearfix">
+    <button class="submit-btn" onclick="submitFunction()">Enviar agora</button>
+    <h4 id="success_message" class="text-center">Seu e-mail foi enviado com sucesso para lugar nenhum :)</h4>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <p class="footer-line">Testando suas habilidades em HTML, CSS e JS.</p>
+      <p class="footer-line">Linx Impulse</p>
+      <p class="footer-line">2019</p>
+    </div>
+  </footer>
+<script src="main.js"></script>
+</body>
+</html>
