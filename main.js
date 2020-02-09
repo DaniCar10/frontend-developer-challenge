@@ -1,5 +1,5 @@
 'use strict';
-// global variable to increment url on loadmore
+// global variable to increment url on loadmore function
 var page = 1;
 // get json from url
 function fetchData() {
@@ -38,12 +38,12 @@ function fetchData() {
 fetchData();
 
 function loadMore() {
-  // increment URL
+  // increment URL (last character)
   page += 1;
   fetchData();
 }
 
-// Client-side validation (only)
+// Client-side validation
 function validateName() {
   let name = document.getElementById('fieldName').value;
 
@@ -84,6 +84,7 @@ function clearBorderMail() {
   document.getElementById("fieldEmail").style.borderColor = "#707070";
 }
 
+// trigger validation o click
 function submitFunction() {
   event.preventDefault();
   if (validateName() & validateEmail()) {
