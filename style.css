@@ -1,15 +1,6 @@
-/* https://css-tricks.com/snippets/css/better-helvetica/ */
 /* @font-face {
-  font-family: 'Helvetica Neue Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url('HelveticaNeue-Regular.ttf') format('ttf');
-} */
-
-/* TRY 2 */
-/* @font-face {
-  font-family: 'Open Sans';
-  src: url('OpenSans-Regular.ttf'].url) format("opentype");
+  font-family: 'Helvetica Neue';
+  src: url('HelveticaNeue.ttf') format('ttf');
 } */
 
 * {
@@ -70,15 +61,19 @@ body {
   display: inline-block;
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 .textBtn {
   width: 160px;
   height: 40px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 6px #00000029;
   border: 1px solid #707070;
   border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #888888;
   opacity: 1;
 }
 
@@ -190,6 +185,9 @@ body {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #888888;
   opacity: 1;
 }
 
@@ -197,19 +195,23 @@ body {
   clear: both;
 }
 
-/* .form {
-  width: 100%;
-  margin-bottom: 10px;
-} */
-
 .form-title {
   text-align: center;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
 }
 
 .form-text {
   margin-top: 44px;
   text-align: center;
   margin-bottom: 40px;
+  font: 16px;
+  font-weight: Bold;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
 }
 
 form {
@@ -221,6 +223,10 @@ input, label {
 
 label {
   margin-bottom: 5px;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #888888;
+  opacity: 1;
 }
 
 .input1 {
@@ -277,22 +283,9 @@ label {
   opacity: 1;
 }
 
-.footer-lines {
-  font: 18px;
+.footer-line {
+  font-size: 18px;
+  margin-bottom: 2px;
   letter-spacing: 0;
   opacity: 1;
 }
-
-
-/* form {
-  margin-left: 572px;
-}
-input, label {
-  display:block;
-}
-.input1 {
-  float:left;margin-right:20px;
-}
-.input2 {
-  float:left;
-} */
