@@ -20,3 +20,6 @@ Para a entrega, priorizei a lógica do Javascript e a estrutura do CSS. Para fin
 Em todo o caso, acho que a estrutura do layout ficou bem próxima a do layout.
 
 ### Instruções
+Deploy: por ser um site dinâmico apenas com frontend, basta fazer o upload no servidor para começar a rodar.
+O botão "Ainda mais produtos aqui" carrega, na mesma página, mais 8 produtos.
+O botão "Enviar agora" confere a validação do formulário (client-side).
