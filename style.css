@@ -82,6 +82,10 @@ body {
   opacity: 1;
 }
 
+.container {
+  width: 100%;
+}
+
 .wrapper {
   margin-left: 280px;
   margin-right: 191px;
@@ -193,10 +197,10 @@ body {
   clear: both;
 }
 
-.form {
+/* .form {
   width: 100%;
   margin-bottom: 10px;
-}
+} */
 
 .form-title {
   text-align: center;
@@ -208,20 +212,32 @@ body {
   margin-bottom: 40px;
 }
 
-.form-field {
+form {
+  margin-left: 402px;
+}
+input, label {
+  display:block;
 }
 
-.form-center {
-  text-align: center;
+label {
+  margin-bottom: 5px;
 }
 
-.form-span {
-  display:inline-block;
+.input1 {
+  float:left;
+  margin-right:20px;
 }
 
-.form-label {
-  display:inline-block;
-  float: left;
+.input2 {
+  float:left;
+}
+
+#fieldName {
+  width: 340px;
+
+}
+#fieldEmail {
+  width: 340px;
 }
 
 .submit-section {
@@ -266,3 +282,17 @@ body {
   letter-spacing: 0;
   opacity: 1;
 }
+
+
+/* form {
+  margin-left: 572px;
+}
+input, label {
+  display:block;
+}
+.input1 {
+  float:left;margin-right:20px;
+}
+.input2 {
+  float:left;
+} */

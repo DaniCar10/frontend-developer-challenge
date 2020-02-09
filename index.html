@@ -18,34 +18,35 @@
     </div>
   </div>
 
-  <div id="app"></div>
-
-  <div class="load-more clearfix">
-    <button class="load-more-btn" onclick="loadMore()">Ainda mais produtos aqui!</button>
-  </div>
-
-  <div class="form">
-  <h3 class="form-title">Compartilhe a novidade</h3>
-  <p class="form-text">Quer que seus amigos também ganhem a lista personalizada? Preencha agora</p>
-  <form class="form-field" action="" method="">
-    <div class="form-center">
-      <span class="form-span">
-        <label class="form-label" for="firstname">first name</label><br>
-        <input id="fieldName" onfocus="clearBorderName()" onfocusout="validateName()" type="text" autocomplete="nope" class="form-control" aria-describedby="namelHelp" placeholder="Nome"><br />
-        <!-- <small id="namePrompt" class="form-text"></small> -->
-      </span><br><br>
-      <span class="form-span">
-        <label class="form-label" for="email">email</label><br>
-        <input id="fieldEmail" onfocus="clearBorderMail()" onfocusout="validateEmail()" type="email" autocomplete="nope" class="form-control" aria-describedby="emailHelp" placeholder="E-mail"><br>
-        <!-- <small id="email_Prompt" class="form-text"></small> -->
-      </span>
+  <div class="container">
+    <div id="app"></div>
+    <div class="load-more clearfix">
+      <button class="load-more-btn" onclick="loadMore()">Ainda mais produtos aqui!</button>
     </div>
-  </form>
   </div>
 
-  <div class="submit-section clearfix">
-    <button class="submit-btn" onclick="submitFunction()">Enviar agora</button>
-    <h4 id="success_message" class="text-center">Seu e-mail foi enviado com sucesso para lugar nenhum :)</h4>
+  <div class="container">
+    <div class="form-section">
+      <h3 class="form-title">Compartilhe a novidade</h3>
+      <p class="form-text">Quer que seus amigos também ganhem a lista personalizada? Preencha agora</p>
+    </div>
+
+    <form>
+        <div class="input1">
+          <label class="form-label" for="firstname">Nome do seu amigo:</label>
+          <input id="fieldName" onfocus="clearBorderName()" onfocusout="validateName()" type="text" autocomplete="nope" class="form-control" aria-describedby="namelHelp" placeholder=""><br />
+        </div>
+        <div class="input2">
+          <label class="form-label" for="email">E-mail:</label>
+          <input id="fieldEmail" onfocus="clearBorderMail()" onfocusout="validateEmail()" type="email" autocomplete="nope" class="form-control" aria-describedby="emailHelp" placeholder=""><br>
+        </div>
+        <br style="clear:both;" />
+    </form>
+
+    <div class="submit-section clearfix">
+      <button class="submit-btn" onclick="submitFunction()">Enviar agora</button>
+      <h4 id="success_message" class="text-center">Seu e-mail foi enviado com sucesso para lugar nenhum :)</h4>
+    </div>
   </div>
 
   <footer>
